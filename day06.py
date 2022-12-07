@@ -4,7 +4,7 @@ import re
 PROBLEM_NUMBER = 6
 
 def execute(is_part_two):
-    line = input.read_lines(problem_number = 6)[0]
+    line = input.read_lines(problem_number = PROBLEM_NUMBER)[0]
     return detect_first_start_of_message_position(line, sequence_size = 4 if not is_part_two else 14)
 
 def detect_first_start_of_message_position(line, sequence_size):
